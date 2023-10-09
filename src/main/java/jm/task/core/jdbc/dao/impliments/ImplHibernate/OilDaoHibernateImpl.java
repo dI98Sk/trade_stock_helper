@@ -38,7 +38,7 @@ public class OilDaoHibernateImpl implements OilDao {
             session.beginTransaction();
             String sqlQuery = "drop table if exists " + Util.dbName + "." + Util.dbTableNameOil;;
             session.createSQLQuery(sqlQuery)
-                    .addEntity(User.class)
+                    .addEntity(Oil.class)
                     .executeUpdate();
             session.getTransaction().commit();
         } catch (Exception e){

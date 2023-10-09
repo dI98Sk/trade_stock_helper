@@ -1,0 +1,13 @@
+-- Для создания таблицы
+-- USE trade_test;
+-- CREATE TABLE oil
+-- (TICKET VARCHAR(20),
+--  PER INT,
+--  DATE DATE,
+--  HOUR INT,
+--  OPEN FLOAT4,
+--  HIGH FLOAT4,
+--  LOW FLOAT4,
+--  CLOSE FLOAT4,
+--  VOL INT
+-- )

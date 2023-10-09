@@ -1,2 +1,2 @@
-# trade_stock_helper
- this repo create in education purpose to help trader 
+# PP_1_1_3-5_JDBC_Hibernate
+ This repo create in education purpose

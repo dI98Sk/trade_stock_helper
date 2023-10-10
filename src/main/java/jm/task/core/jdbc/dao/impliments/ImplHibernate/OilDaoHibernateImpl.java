@@ -2,7 +2,6 @@ package jm.task.core.jdbc.dao.impliments.ImplHibernate;
 
 import jm.task.core.jdbc.dao.OilDao;
 import jm.task.core.jdbc.entity.Oil;
-import jm.task.core.jdbc.entity.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -36,9 +35,9 @@ public class OilDaoHibernateImpl implements OilDao {
     public void dropOilTable() {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-            String sqlQuery = "drop table if exists " + Util.dbName + "." + Util.dbTableNameOil;;
+            String sqlQuery = "drop table if exists " + Util.dbName + "." + Util.dbTableNameOil;
             session.createSQLQuery(sqlQuery)
-                    .addEntity(User.class)
+                    .addEntity(Oil.class)
                     .executeUpdate();
             session.getTransaction().commit();
         } catch (Exception e){
